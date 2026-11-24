@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="683" viewBox="0 0 760 683" role="img" aria-label="Step-by-step visual walkthrough">
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="context-stroke"/></marker></defs>
+<rect x="1.0" y="1.0" width="758.0" height="681.0" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+<text x="24.0" y="34.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="17" fill="#1e293b" text-anchor="start" font-weight="600">Largest BST Subtree — report (min, max, size) upward</text>
+<circle cx="35.0" cy="74.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="78.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">1</text>
+<text x="56.0" y="79.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">The whole tree may not be a BST, but subtrees can be. Here the root 10 breaks the</text>
+<text x="56.0" y="98.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">property (15 on its left), yet the 15-subtree is a perfect little BST of size 3.</text>
+<line x1="380.0" y1="150.0" x2="202.0" y2="180.0" stroke="#94a3b8" stroke-width="1.3"/>
+<line x1="380.0" y1="150.0" x2="558.0" y2="180.0" stroke="#94a3b8" stroke-width="1.3"/>
+<line x1="202.0" y1="212.0" x2="113.0" y2="242.0" stroke="#94a3b8" stroke-width="1.3"/>
+<line x1="202.0" y1="212.0" x2="291.0" y2="242.0" stroke="#94a3b8" stroke-width="1.3"/>
+<circle cx="380.0" cy="134.0" r="17" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+<text x="380.0" y="139.0" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#1e293b" text-anchor="middle">10</text>
+<circle cx="202.0" cy="196.0" r="17" fill="#dcfce7" stroke="#16a34a" stroke-width="1.4"/>
+<text x="202.0" y="201.0" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#1e293b" text-anchor="middle">15</text>
+<circle cx="558.0" cy="196.0" r="17" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="558.0" y="201.0" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#1e293b" text-anchor="middle">5</text>
+<circle cx="113.0" cy="258.0" r="17" fill="#dcfce7" stroke="#16a34a" stroke-width="1.4"/>
+<text x="113.0" y="263.0" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#1e293b" text-anchor="middle">12</text>
+<circle cx="291.0" cy="258.0" r="17" fill="#dcfce7" stroke="#16a34a" stroke-width="1.4"/>
+<text x="291.0" y="263.0" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#1e293b" text-anchor="middle">20</text>
+<line x1="24.0" y1="298.0" x2="736.0" y2="298.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="318.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="322.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">2</text>
+<text x="56.0" y="323.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">One postorder pass: each node reports (is-BST, min, max, size). A node is a BST root</text>
+<text x="56.0" y="342.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">iff both children are AND left.max &lt; node &lt; right.min. A broken subtree poisons its</text>
+<text x="56.0" y="361.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">ancestors but keeps its own best size.</text>
+<text x="24.0" y="385.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="start" font-weight="600">postorder</text>
+<text x="47.0" y="401.0" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#64748b" text-anchor="middle">node</text>
+<text x="93.0" y="401.0" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#64748b" text-anchor="middle">report</text>
+<rect x="24.0" y="407.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="46.0" y="427.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">12</text>
+<rect x="70.0" y="407.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="92.0" y="427.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">BST, size 1</text>
+<rect x="24.0" y="439.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="46.0" y="459.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">20</text>
+<rect x="70.0" y="439.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="92.0" y="459.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">BST, size 1</text>
+<rect x="24.0" y="471.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="46.0" y="491.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">15</text>
+<rect x="70.0" y="471.0" width="44.0" height="30.0" rx="4" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+<text x="92.0" y="491.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">12 &lt; 15 &lt; 20 → BST size 3</text>
+<rect x="24.0" y="503.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="46.0" y="523.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">10</text>
+<rect x="70.0" y="503.0" width="44.0" height="30.0" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.2"/>
+<text x="92.0" y="523.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">left max 20 &gt; 10 → not BST</text>
+<line x1="24.0" y1="549.0" x2="736.0" y2="549.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="569.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="573.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">3</text>
+<text x="56.0" y="574.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Answer: 3. The trap is checking each node with a separate isBST call — O(n²). The</text>
+<text x="56.0" y="593.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">tuple-report version is O(n): validity and size travel together.</text>
+<text x="72.0" y="628.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end">answer</text>
+<rect x="84.0" y="609.0" width="198.0" height="28.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+<text x="183.0" y="628.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">largest BST size → 3</text>
+<text x="380.0" y="665.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">github.com/Sreenivas-Sadhu-Prabhakara · dsa series</text>
+</svg>
